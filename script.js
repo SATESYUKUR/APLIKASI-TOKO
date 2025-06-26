@@ -13,10 +13,10 @@ if ('serviceWorker' in navigator) {
 // ... sisa kode JavaScript Anda ...
 // Data Menu Produk (Anda bisa menambahkan lebih banyak!)
 const menu = [
-    { id: 1, name: 'Minas ayam', price: 18000, image: '/APLIKASI-TOKO/images/minas-ayam.jpg' },
-    { id: 2, name: 'Minas sate', price: 14000, image: '/APLIKASI-TOKO/images/minas-sate.jpg' },
-    { id: 3, name: 'Minas telor', price: 14000, image: '/APLIKASI-TOKO/images/minas-telor.jpg' },
-    { id: 4, name: 'Aneka Minuman', price: 5000, image: '/APLIKASI-TOKO/images/minuman.jpg' }
+    { id: 1, name: 'Minas ayam', price: 18000, image: '/APLIKASI-TOKO/images/minas-ayam.png' },
+    { id: 2, name: 'Minas sate', price: 14000, image: '/APLIKASI-TOKO/images/minas-sate.png' },
+    { id: 3, name: 'Minas telor', price: 14000, image: '/APLIKASI-TOKO/images/minas-telor.png' },
+    { id: 4, name: 'Aneka Minuman', price: 5000, image: '/APLIKASI-TOKO/images/minuman.png' }
     // Anda bisa menambahkan menu lain di sini dengan ID unik (misal: id: 5, id: 6, dst.)
 ];
 

@@ -8,10 +8,10 @@ const urlsToCache = [
     '/APLIKASI-TOKO/icons/icon-192x192.png',
     '/APLIKASI-TOKO/icons/icon-512x512.png',
     // --- Gambar Menu Baru ---
-    '/APLIKASI-TOKO/images/minas-ayam.jpg',
-    '/APLIKASI-TOKO/images/minas-sate.jpg',
-    '/APLIKASI-TOKO/images/minas-telor.jpg',
-    '/APLIKASI-TOKO/images/minuman.jpg'
+    '/APLIKASI-TOKO/images/minas-ayam.png',
+    '/APLIKASI-TOKO/images/minas-sate.png',
+    '/APLIKASI-TOKO/images/minas-telor.png',
+    '/APLIKASI-TOKO/images/minuman.png'
     // Tambahkan semua aset statis lain yang ingin di-cache
 ];
 
