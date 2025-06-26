@@ -13,12 +13,11 @@ if ('serviceWorker' in navigator) {
 // ... sisa kode JavaScript Anda ...
 // Data Menu Produk (Anda bisa menambahkan lebih banyak!)
 const menu = [
-    { id: 1, name: 'Nasi Goreng', price: 20000, image: 'images/nasi_goreng.jpg' },
-    { id: 2, name: 'Mie Ayam', price: 18000, image: 'images/mie_ayam.jpg' },
-    { id: 3, name: 'Sate Ayam', price: 25000, image: 'images/sate_ayam.jpg' },
-    { id: 4, name: 'Es Teh Manis', price: 5000, image: 'images/esteh.jpg' },
-    { id: 5, name: 'Kopi Susu', price: 12000, image: 'images/kopi_susu.jpg' }
-    // Tambahkan lebih banyak menu di sini
+    { id: 1, name: 'Minas ayam', price: 18000, image: '/APLIKASI-TOKO/images/minas-ayam.jpg' },
+    { id: 2, name: 'Minas sate', price: 14000, image: '/APLIKASI-TOKO/images/minas-sate.jpg' },
+    { id: 3, name: 'Minas telor', price: 14000, image: '/APLIKASI-TOKO/images/minas-telor.jpg' },
+    { id: 4, name: 'Aneka Minuman', price: 5000, image: '/APLIKASI-TOKO/images/minuman.jpg' }
+    // Anda bisa menambahkan menu lain di sini dengan ID unik (misal: id: 5, id: 6, dst.)
 ];
 
 // Keranjang Belanja (akan menyimpan item yang dipilih)
