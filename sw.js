@@ -1,4 +1,4 @@
-const CACHE_NAME = 'toko-app-cache-v4'; // Ganti ke v4 (atau v5, dst.) untuk memaksa pembaruan
+const CACHE_NAME = 'toko-app-cache-v5'; // Ubah ini ke v5 atau lebih tinggi untuk memaksa pembaruan cache
 const urlsToCache = [
     '/APLIKASI-TOKO/',
     '/APLIKASI-TOKO/index.html',
@@ -8,15 +8,12 @@ const urlsToCache = [
     '/APLIKASI-TOKO/icons/icon-192x192.png',
     '/APLIKASI-TOKO/icons/icon-512x512.png',
     // --- Gambar Menu Baru (dengan ekstensi .jpg) ---
-    '/APLIKASI-TOKO/images/minas-ayam.jpg', // Diubah ke .jpg
-    '/APLIKASI-TOKO/images/minas-sate.jpg', // Diubah ke .jpg
-    '/APLIKASI-TOKO/images/minas-telor.jpg', // Diubah ke .jpg
-    '/APLIKASI-TOKO/images/minuman.jpg' // Diubah ke .jpg
+    '/APLIKASI-TOKO/images/minas-ayam.jpg',
+    '/APLIKASI-TOKO/images/minas-sate.jpg',
+    '/APLIKASI-TOKO/images/minas-telor.jpg',
+    '/APLIKASI-TOKO/images/minuman.jpg'
     // Tambahkan semua aset statis lain yang ingin di-cache
 ];
-
-// ... sisa kode Service Worker ...
-navigator.serviceWorker.register('/APLIKASI-TOKO/sw.js')
 
 // Event: Install Service Worker
 self.addEventListener('install', event => {
