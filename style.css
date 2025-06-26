@@ -1,0 +1,307 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Menggunakan font Poppins yang diimpor */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang halaman */
+    color: #333; /* Warna teks default */
+    line-height: 1.6;
+}
+
+/* Container for main content */
+.container {
+    width: 90%;
+    max-width: 1200px; /* Lebar maksimum untuk konten utama */
+    margin: 20px auto; /* Memberi jarak dari atas/bawah dan menengahkan kontainer */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Header Styles */
+header {
+    background-color: #4CAF50; /* Warna hijau untuk header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+/* Section Headings */
+h2 {
+    color: #4CAF50; /* Warna hijau untuk judul section */
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Menu Items Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Kolom responsif */
+    gap: 20px; /* Jarak antar item */
+    padding: 20px 0;
+}
+
+.menu-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out; /* Efek hover */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Sedikit naik saat di-hover */
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: 150px; /* Tinggi gambar tetap */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa terdistorsi */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    margin: 10px 0 5px;
+    color: #555;
+    font-size: 1.3em;
+}
+
+.menu-item .price {
+    font-weight: 600;
+    color: #E67E22; /* Warna harga orange */
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* Add to Cart Button for Menu Items */
+.menu-item .add-to-cart-btn {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item .add-to-cart-btn:hover {
+    background-color: #45a049; /* Hijau lebih gelap */
+}
+
+/* Customer Info Section */
+#customer-info-section {
+    padding: 20px;
+    background-color: #e8f5e9; /* Latar belakang hijau muda */
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #c8e6c9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4CAF50;
+}
+
+.form-group input[type="text"] {
+    width: 70%; /* Lebar input */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus {
+    border-color: #4CAF50; /* Border hijau saat fokus */
+}
+
+/* Cart Section Table */
+#cart-section {
+    padding: 20px;
+    background-color: #f0f4f8; /* Latar belakang biru muda */
+    border-radius: 8px;
+    border: 1px solid #d0e1ee;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+#cart-table th {
+    background-color: #607D8B; /* Warna abu-abu kebiruan untuk header tabel */
+    color: white;
+    font-weight: 600;
+}
+
+#cart-table tr:nth-child(even) {
+    background-color: #f2f2f2; /* Warna abu-abu untuk baris genap */
+}
+
+.cart-item-actions button {
+    background-color: #007bff; /* Biru untuk tambah/kurang */
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.85em;
+    margin: 0 3px;
+    transition: background-color 0.3s ease;
+}
+
+.cart-item-actions button:hover {
+    background-color: #0056b3;
+}
+
+.cart-item-actions .remove-btn {
+    background-color: #dc3545; /* Merah untuk batal/hapus */
+}
+
+.cart-item-actions .remove-btn:hover {
+    background-color: #c82333;
+}
+
+.empty-cart-message {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+    padding: 15px;
+}
+
+/* Cart Summary and Checkout Button */
+.cart-summary {
+    text-align: right;
+    margin-top: 20px;
+    font-size: 1.3em;
+    color: #28a745; /* Hijau cerah */
+    font-weight: 700;
+}
+
+#checkoutButton {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #FF5722; /* Oranye untuk checkout */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#checkoutButton:hover:not(:disabled) {
+    background-color: #e64a19; /* Oranye lebih gelap */
+    transform: translateY(-2px);
+}
+
+#checkoutButton:disabled {
+    background-color: #cccccc; /* Abu-abu saat dinonaktifkan */
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    background-color: #333; /* Warna gelap untuk footer */
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .menu-item img {
+        height: 120px;
+    }
+
+    .form-group input[type="text"] {
+        width: 90%;
+    }
+
+    #cart-table th, #cart-table td {
+        padding: 8px;
+        font-size: 0.9em;
+    }
+
+    .cart-item-actions button {
+        padding: 4px 8px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Satu kolom di layar sangat kecil */
+    }
+
+    .menu-item img {
+        height: 100px;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    #checkoutButton {
+        font-size: 1em;
+        padding: 12px;
+    }
+}

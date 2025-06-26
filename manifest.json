@@ -1,0 +1,22 @@
+{
+  "name": "Toko Online Saya",
+  "short_name": "Toko Saya",
+  "description": "Aplikasi Toko Online dan Offline",
+  "start_url": "/APLIKASI-TOKO/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4CAF50",
+  "icons": [
+    {
+      "src": "/APLIKASI-TOKO/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/APLIKASI-TOKO/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+    // Tambahkan ikon ukuran lain di sini jika ada, dengan path yang sama
+  ]
+}
