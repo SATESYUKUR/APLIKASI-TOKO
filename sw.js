@@ -1,4 +1,4 @@
-const CACHE_NAME = 'toko-app-cache-v1'; // Jika Anda sering mengubah aset, Anda bisa mengubah 'v1' menjadi 'v2', 'v3', dst. untuk memastikan cache baru dimuat.
+const CACHE_NAME = 'toko-app-cache-v4'; // Ganti ke v4 (atau v5, dst.) untuk memaksa pembaruan
 const urlsToCache = [
     '/APLIKASI-TOKO/',
     '/APLIKASI-TOKO/index.html',
@@ -7,11 +7,11 @@ const urlsToCache = [
     '/APLIKASI-TOKO/manifest.json',
     '/APLIKASI-TOKO/icons/icon-192x192.png',
     '/APLIKASI-TOKO/icons/icon-512x512.png',
-    // --- Gambar Menu Baru ---
-    '/APLIKASI-TOKO/images/minas-ayam.png',
-    '/APLIKASI-TOKO/images/minas-sate.png',
-    '/APLIKASI-TOKO/images/minas-telor.png',
-    '/APLIKASI-TOKO/images/minuman.png'
+    // --- Gambar Menu Baru (dengan ekstensi .jpg) ---
+    '/APLIKASI-TOKO/images/minas-ayam.jpg', // Diubah ke .jpg
+    '/APLIKASI-TOKO/images/minas-sate.jpg', // Diubah ke .jpg
+    '/APLIKASI-TOKO/images/minas-telor.jpg', // Diubah ke .jpg
+    '/APLIKASI-TOKO/images/minuman.jpg' // Diubah ke .jpg
     // Tambahkan semua aset statis lain yang ingin di-cache
 ];
 
